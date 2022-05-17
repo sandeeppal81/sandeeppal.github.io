@@ -41,44 +41,98 @@ p{
 
 
 .navbar{
+ 
     display: flex;
     justify-content: space-between;
- align-items: center;
-    color: #82758a;
-    background-color: var(--white);
-    font-size: 2.5rem;
-    height: 9rem;
- 
-
-
-}
-
-.new-navbar ul{
-  margin-top: 40rem;
-  height: 30rem;
- 
-
-
-}
-.navbar .logo{
-    display: flex;
-    gap: 1rem;
-
     align-items: center;
+
+
+    background-color: var(--white);
+
+
+
+    flex-wrap: wrap;
     width: 100%;
+    font-size: 2.5rem;
+    height: 10rem;
+    position: relative;
+   
+ 
+
 
 }
+
+
+.navbar ul{
+    position: absolute;
+    top: 10rem;
+   
+    width: 100%;
+    padding: 1rem;
+    background-color: #6b3fc0;
+ 
+   font-size: 1.3rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    /* margin-top: 5rem; */
+    display: none;
+    
+   
+
+
+}
+
+.navbar-click{
+    background-color: #000000;
+ 
+
+}
+
+
+
 
 .navbar .logo h2{
     color: #6b3fc0;
     font-size: 3rem;
-    margin-left:1rem ;
+
 
 }
 main{
     background-color: #efeeef;
 
 }
+
+
+
+
+
+.hero-content h2{
+    color: #8839dc;
+}
+.hemburger-click{
+    color: #000000;
+   
+}
+
+.hemburger-menu a{
+color: #000000;
+
+}
+
+ul.show{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+
 .hero{
     /* margin-top: 3rem; */
     display: flex;
@@ -116,62 +170,6 @@ main{
 
     
     
-}
-
-.hero-content h2{
-    color: #8839dc;
-}
-.hemburger-click{
-    color: #000000;
-    margin-right: 1rem;
-}
-
-.hemburger-menu a{
-color: #000000;
-
-}
-
-/* .new-hemburger{
-    display: flex;
-   
-} */
-.hemburger-menu{
-
-
-
-/* margin-top: 10rem; */
-display: flex;
-display: none;
-color: #54627b;
-
-
-}
-
-nav ul{
- 
-    
-    margin-top: 10rem;
-    width: 45rem;
-    text-align: center;
-    list-style: none;
-    padding: 1rem;
-    background-color: whitesmoke;
-    margin-top: 1rem;
-    display: none;
-   
-}
-
-ul.show{
-     display: block;
- 
-   
-  
-    
-   
-  
-  
-   
-
 }
 .hero-content p{
     font-size: 1rem;
@@ -251,9 +249,7 @@ section{
     width: 100%;
   
 }
-/* .about-img img{
-    width: 70%;
-} */
+
 
 .service{
     display: flex;
@@ -288,7 +284,7 @@ background-color: #931bde28;
 
 .service .skills{
 margin-left: .8rem;
-/* text-align: center; */
+
 align-items: center;
 margin-top: .8rem;
 gap: 4rem;
@@ -303,13 +299,13 @@ gap: 4rem;
     flex-direction: column;
 
     justify-content: center;
-    /* align-items: center; */
-    gap: 6rem;
+ 
+    gap: 5rem;
 
     text-align: center;
     background-color: #6b3fc0;
     color: #fefefe;
-    padding: .5rem;
+    padding: 1rem;
     
 }
 .task-number div{
@@ -340,11 +336,19 @@ PROJECTS
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    padding: 2rem;
 }
 
 .projects div img{
     width: 100%;
     height: 100%;
+}
+.box{
+    color:#646465;
+    line-height: 1.5;
+   
+  
+    
 }
 
 .new-projects{
@@ -353,220 +357,335 @@ PROJECTS
     gap: 5rem;
  }
 
-@media(min-width:800px){
-    nav{
-        background-color: #9BB7D4;
+
+ /* =========================
+ 
+        FEEDBACK
+ 
+ ============================*/
+
+
+
+.feedback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    margin-top: 4rem;
+    padding: 2rem;
+}
+
+
+.feedback h2{
+    font-size: 2.8rem;
+    line-height: 3;
+}
+
+.feed-content{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    line-height: 2;
+
+}
+
+.feed-content img{
+    width: 30%;
+}
+
+
+
+/* =======================
+
+           Footer
+
+===============================*/
+
+
+.footer{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    color: #efeeef;
+    display: flex;
+ 
+    flex-direction: column;
+    /* height: 30rem; */
+    gap: 2rem;
+    padding: 2rem;
+    line-height: 3;
+   
+
+}
+
+.footer p{
+    color: grey;
+    line-height:2;
+}
+
+.soccial-icon{
+    display: flex;
+    gap: 2rem;
+    font-size: 3rem;
+}
+
+
+.Newsletter input{
+    width: 30rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    
+
+}
+
+
+
+.input-arrow{
+    display: flex;
+    align-items: center;
+   
+}
+
+.arrow{
+  
+    background-color: #8839dc;
+    height: 5rem;
+    width: 5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* ====================
+ 
+ media query
+ 
+ =============================m*/
+
+@media (min-width:700px){
+
+    .navbar ul{
+        position: relative;
+        top: 0;
+    }
+    .hemburger-click{
+        display: none;
+    }
+    .navbar{
+        flex-wrap: nowrap;
+       
+        justify-content: space-around;
+
+    
+      
     }
 
-    .about-me{
-        background-color: #0072B5;
-        margin: 0;
-    }
-    .btn{
-        border-radius:3rem;
-        background-color: rgb(102, 8, 157);
-    }
-    .new-hero{
+    .navbar ul{
+    width: auto;
         display: flex;
         flex-direction: row;
+     
+        gap: 2rem;
+       justify-content: flex-start;
+     
         align-items: center;
-        justify-content: space-between;
-        gap: 3rem;
+        background: transparent;
+        margin-top: 0;
+        padding: 0;
+        font-size: 2rem;
+    }
+
+  
+
+    .navbar ul a{
+        border: .1px solid #6b3fc0;
+        padding: 1rem;
+        border-radius: 5rem;
+    }
+    .navbar ul a:hover{
+      background-color: #6b3fc0;
+      color: #efeeef;
+    
+    }
+
+
+.hero{
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-img {
+    width: 80%;
+    height: 100%;
+}
+
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+}
+
+.service .new-hero{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.service .new-hero h2{
+    font-size: 4rem;
+  
+}
+.service{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 5rem;
+
+}
+
+
+
+.new-service{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 2rem;
+}
+
+.service .skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-number{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 20rem;
+}
+
+
+.projects h2{
+    font-size: 4rem;
+    font-weight: 300;
+
+}
+
+.projects{
+    padding: 2rem;
+}
+.box{
+    color:#646465;
+    line-height: 1.5;
+   
+  
+    
+}
+.feedback{
+    background-color: #a679e1;
+    color: #efeeef;
+}
+.feed-content{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.feedback img{
+    width: 20%;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+}
+}
+
+
+@media(min-width: 928px){
+
+    .navbar ul{
+        position: relative;
+        top: 0;
+    }
+
+   .hero{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       padding: 5rem;
+       
+   }
+
+   .hero h1{
+       font-size: 7rem;
+   }
+
+    .hero-img {
+        width: 35%;
+        height: 100%;
+        /* padding: 3rem; */
+    }
+
+    .skills{
+        width: 40rem;
+    }
+
+    .task-number{
+        gap: 10rem;
+    }
+
+
+    .projects p{
+        font-size: 1.5rem;
+    
+    }
+
+    .new-projects{
+
+        margin-top: 4rem;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 4rem;
+        gap: 7rem;
+    }
+
+    .box{
+        color:#646465;
+        line-height: 1.5;
+       
       
         
     }
 
-    .hero-img{
-        width: 100%;
-        align-items: center;
-        border: 1rem solid rgb(102, 8, 157);
-        border-radius: 3rem;
-        padding: 1rem;
-      
+  
 
-    }
-
-    .hero-img img{
-        width: 100%;
-    }
-    /* .service {
-        display: flex;
-        flex-direction: row;
-    } */
-
-    .new-service{
-        display: flex;
-    }
-
-    .service .skills{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .task-number{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height:20rem;
-    }
-
-
-.projects h2{
-font-size: 2.5rem;
-}
-
-.projects p{
-    font-size: 1.2rem;
-}
-    .new-projects{
-       display: grid;
-       grid-template-columns: repeat(3,1fr);
-       gap: 5rem;
-
-    }
-
-    .hemburger-menu{
-        display: block;
-        display: flex;
-      
-     justify-content: space-between;
-     /* gap: 2rem; */
-     /* margin: 2rem; */
-
-    
-    }
-
-    .hemburger-menu a{
+    .box h3{
         font-size: 2rem;
-        color: #54627b;
-    padding: 1rem;
+        font-weight: 100;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 
     }
 
-    .hemburger-click{
-        display: none;
-    }
 
-    .hero-content{
-        margin-top: 0;
-    }
-
-    .hemburger-menu a:hover{
-        border: 1px solid rgb(102, 8, 157);
-     
-     
-    }
-
-
-   
-
-    
-
-    
-
-    
-
-   
 
 }
-@media (min-width:992px){
-  
-
-    .hero-content{
-        width: 30%;
-        margin-left: 3rem;
-        gap: 2rem;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        /* align-items: center; */
-    }
-
-    .hero-content p{
-        font-size: 2rem;
-    }
-    .hero{
-        padding: 3rem;
-        /* background-color: #9BB7D4; */
-    }
-    .hero-img{
-        width: 30%;
-      
-    }
-    .hero-img img{
-        width: 100%;
-    }
-    .new-hero{
-        display: flex;
- 
-        justify-content: center;
-
-    }
-  
-
-    .new-projects{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        gap: 7;
-    }
-    .hemburger-menu{
-        display: block;
-        display: flex;
-      
-     justify-content: space-between;
-     /* gap: 2rem; */
-     /* margin: 2rem; */
-
-    
-    }
-  
-
-    .hemburger-menu a{
-        font-size: 2rem;
-        color: #54627b;
-    padding: 1rem;
-
-    }
-
-    .hemburger-click{
-        display: none;
-    }
-
-    .hero-content{
-        margin-top: 0;
-    }
-
-    .hemburger-menu a:hover{
-        border: 1px solid rgb(102, 8, 157);
-     
-     
-    }
-
- 
-
-   
-
-    
-
-   
-
-   
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 
 
