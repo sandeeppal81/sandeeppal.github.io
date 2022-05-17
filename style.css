@@ -379,15 +379,16 @@ PROJECTS
 
 
 .feedback h2{
-    font-size: 2.8rem;
-    line-height: 3;
+    font-size: 2.3rem;
+    /* line-height: 3; */
 }
 
 .feed-content{
+    margin-top: 5rem;
     display: flex;
     align-items: center;
     gap: 2rem;
-    line-height: 2;
+    line-height: 2.4;
 
 }
 
@@ -681,6 +682,30 @@ PROJECTS
         font-weight: 100;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+
+    }
+
+    .feedback{
+        background-color: #822fcb;
+        color: #171414;
+    }
+    .feed-content{
+       margin-top: 4rem;
+       width: 25rem;
+    }
+
+    .feedback img{
+        width: 100%;
+        
+    }
+
+    .feedback p{
+        color: whitesmoke;
+    }
+
+    .footer{
+        justify-content: space-between;
+        padding: 4rem;
 
     }
 
